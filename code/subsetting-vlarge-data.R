@@ -10,17 +10,13 @@
   #perform cleaning steps ------ 
     ## FIX THE CODE TO PERFORM THE FOLLOWING SUBSETTING STEPS BEFORE SAVING
     
-    #!!! get only nitrate and TKN data 
+    #get only nitrate and TKN data 
       df <- df[df$analyte %in% c(),]
       
-    #!!! we only want sample collected after 2010 
+    #we only want sample collected after 2010 
       df <- df[df$date >= as.Date(2010-01-01),]
       
-    #!!! the units aren't right, multiply by the unit conversion 
-      conv <- 0.241
-      df$result <- df$result 
-      
-    #!!! save using the relative path to the example folder 
+    #save using the relative path to the example folder 
       name <- ""
       filename <- paste0("subset-vlarge-data-", name, ".csv")
       write.csv(df, )

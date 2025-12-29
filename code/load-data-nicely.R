@@ -10,9 +10,9 @@
   tmp <- tempdir() #gets temporary directory that deletes when R closes
   
   url <- "https://andlter.forestry.oregonstate.edu/data/register/dataaccess.aspx?docid=HF00402_v14.csv"
-  download.file(url, destfile=file.path(tmp, "HJ-month-nut-outflow.csv"))
+  download.file(url, destfile=file.path(tmp, "HJ-daily-flow.csv"))
   
-  dlwd_csv <- read.csv(file.path(tmp, "HJ-month-nut-outflow.csv"))
+  dlwd_csv <- read.csv(file.path(tmp, "HJ-daily-flow.csv"))
   head(dlwd_csv)
   
 #example 3: load in data from an R package ------ 
@@ -20,7 +20,7 @@
   if (!requireNamespace("dataRetrieval", quietly = TRUE)) install.packages("dataRetrieval")
   library(dataRetrieval)
 
-  #get flow data from USGS
+  #get flow data from USGS for Lookout Creek
   site <-  "USGS-14161500"
   pckg_csv <- read_waterdata_daily(monitoring_location_id = site,
                                        parameter_code = "00060", 

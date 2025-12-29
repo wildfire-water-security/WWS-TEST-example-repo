@@ -11,12 +11,12 @@ data$value3 <- data$value - 10
 
 ggplot(data, aes(x = value, y = value2)) +
   geom_line() + ggtitle("value minus a constant")
-ggsave("C:/Users/Katie/Documents/WWS/Plots/value_minus_2.png")
+ggsave("C:/Users/Katie/Documents/WWS/figures/value_minus_2.png")
 
 ggplot(data, aes(x = value, y = value3)) +
   geom_line() + ggtitle("value minus a constant")
-ggsave("C:/Users/Katie/Documents/WWS/Plots/value_minus_4.png")
+ggsave("C:/Users/Katie/Documents/WWS/figures/value_minus_4.png")
 
 ggplot(data, aes(x = value, y = value3)) +
   geom_line() + ggtitle("value minus a constant")
-ggsave("C:/Users/Katie/Documents/WWS/Plots/value_minus_10.png")
+ggsave("C:/Users/Katie/Documents/WWS/figures/value_minus_10.png")
