@@ -1,6 +1,6 @@
 # example code file for learning how to use Git and GitHub
 
-username <- "smith"
+username <- "PaigeScottie"
 file <- file.path("C:/Users", username, "Documents/WWS-TEST-example-repo/data/example-csv.csv")
 print(file)
 
