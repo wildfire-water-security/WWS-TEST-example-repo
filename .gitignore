@@ -1,0 +1,6 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+data/example-large-data.csv
+data/example-large-raster.tif
