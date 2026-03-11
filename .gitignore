@@ -1,6 +1,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,r
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,r
 
+# Large files
+data/example-large-data.csv
+data/example-large-raster.tif
+
+
 ### macOS ###
 # General
 .DS_Store
