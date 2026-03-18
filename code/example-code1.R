@@ -1,7 +1,6 @@
 # example code file for learning how to use Git and GitHub
 
-username <- "katie"
-file <- file.path("C:/Users", username, "Documents/WWS-TEST-example-repo/data/example-csv.csv")
+
 username <- "nussdore"
 file <- file.path("C:/Users", username, "Documents/Github/WWS-TEST-example-repo/data/example-csv.csv")
 print(file)
@@ -13,4 +12,4 @@ print(file)
   library(usethis)
   repo <- file.path(fs::path_home(), "Documents/Github/WWS-TEST-example-repo/")
   usethis::create_project(repo)
-g  
+g
