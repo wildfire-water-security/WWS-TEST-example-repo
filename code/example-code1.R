@@ -8,3 +8,12 @@ print(file)
   df <- read.csv(file)
   df$value <- sample(1:100, size=4)
   write.csv(df, file, row.names=FALSE)
+  #install.package("usethis") #only need to run the first time
+  library(usethis)
+
+  #the location you of your project folder
+  repo <- file.path(fs::path_home(), "Documents/WWS-TEST-example-repo/")
+
+  #create an R project from the directory
+  usethis::create_project(repo)
+
