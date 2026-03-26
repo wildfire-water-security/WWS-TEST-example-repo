@@ -3,20 +3,23 @@
 library(dplyr)
 library(ggplot2)
 
-data <- read.csv("C:/Users/Katie/Documents/WWS/Data/example-csv.csv")
+#Read in data
+data <- read.csv("Data/example-csv.csv")
 
+#create new values based on the first value
 data$value2 <- data$value - 2
 data$value3 <- data$value - 4
 data$value3 <- data$value - 10
 
+#plot and save
 ggplot(data, aes(x = value, y = value2)) +
   geom_line() + ggtitle("value minus a constant")
-ggsave("C:/Users/Katie/Documents/WWS/figures/value_minus_2.png")
+ggsave("figures/value_minus_2.png")
 
 ggplot(data, aes(x = value, y = value3)) +
   geom_line() + ggtitle("value minus a constant")
-ggsave("C:/Users/Katie/Documents/WWS/figures/value_minus_4.png")
+ggsave("figures/value_minus_4.png")
 
 ggplot(data, aes(x = value, y = value3)) +
   geom_line() + ggtitle("value minus a constant")
-ggsave("C:/Users/Katie/Documents/WWS/figures/value_minus_10.png")
+ggsave("figures/value_minus_10.png")
